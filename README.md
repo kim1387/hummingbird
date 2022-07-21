@@ -33,17 +33,6 @@
 <img width="1563" alt="image" src="https://user-images.githubusercontent.com/54930877/157592050-4f216442-25f0-4ef0-b996-32311882ae4e.png">
 
 
-## 2. 아키텍처
-
-<img width="1167" alt="image" src="https://user-images.githubusercontent.com/54930877/157592191-67d3e089-a990-47ed-8f9b-102dbfa07c12.png">
-
-현재 보이는 아키텍쳐는 CI/CD 파이프라인을 포함한 전체 환경이다. 코드를 깃허브에 push 하게 되면 웹훅 트리거가 작동하여 Jenkins를 통해 그래들과 스프링부트 도커 이 미지를 빌드되는 것을 목표로 설계하였다. 빌드된 이미지는 도커 허브에 푸쉬 되고 WAS는 해당 이미지를 pull하여 리액트를 통해 웹에 보여지게 된다.
-
-## 3. 실행방법
-```
-docker-compose up --build
-```
-
 ## 4. 디렉토리
 
 ```
